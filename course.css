@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(30, 241, 6);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(30, 28, 28);
+}
+.nav-page {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-margin-right: 20px;
+  scrollbar-color: white rgb(63, 60, 60);
+}
+
+.nav-page li {
+  border-bottom: 1px solid rgb(217, 210, 210);
+  font-size: 25px;
+  padding: 10px 30px;
+}
+li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+header {
+  font-size: 30px;
+  color: white;
+}
+.main-page {
+  /* width: 100%; */
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-margin-right: 10px;
+  scrollbar-color: rgb(60, 58, 58) transparent;
+  scroll-behavior: smooth;
+}
+.main-page .main-section {
+  padding: 3px 10px;
+}
+code {
+  color: #f36d33;
+}
+pre {
+  background-color: #f4f4f4; /* Set a background color */
+  border: 1px solid #ddd; /* Add a border */
+  border-left: 3px solid #f36d33; /* Highlight the left edge */
+  color: #e11515; /* Choose a text color */
+  font-family: monospace; /* Use a fixed-width font */
+  font-size: 15px; /* Set font size */
+  line-height: 1.6; /* Adjust line height */
+  margin: 1.6em 0em; /* Add spacing at the bottom */
+  max-width: 100%; /* Ensure responsiveness */
+  overflow: auto; /* Enable horizontal scrolling if needed */
+  padding: 2em 3em; /* Add padding for readability */
+  display: block; /* Ensure block-level display */
+  word-wrap: break-word; /* Prevent long words from overflowing */
+}
+@media (max-width: 1000px) {
+  body {
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-page,
+  .main-page {
+    overflow-y: scroll;
+  }
+}
